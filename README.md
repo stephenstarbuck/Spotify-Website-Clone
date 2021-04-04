@@ -12,4 +12,4 @@ These are the original designs for [desktop](https://www.dropbox.com/s/5cjl359sc
 
 ## Feedback
 
-Feedback is always welcome! Please message me on GitHub or email me mrstarbuck[at]me[dot]com.
+Feedback is always welcome! Please message me on GitHub or [email me](mailto:mrstarbuck@me.com).
