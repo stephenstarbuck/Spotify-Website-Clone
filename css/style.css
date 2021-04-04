@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0.04rem;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+
+li {
+  list-style: none;
+}
+
+/* Navbar */
+#navbar {
+  background: rgb(0, 0, 0);
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  top: 0;
+  margin-bottom: 55px;
+}
+
+#navbar .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  overflow: hidden;
+}
+
+.logo .img-logo {
+  max-width: 100px;
+  padding: 0.75rem 0 0 1rem;
+}
+
+.text-gray a {
+  color: rgb(216, 216, 216);
+}
+
+#nav-links li {
+  display: none;
+}
+
+#navbar-toggle {
+  font-size: 1.25rem;
+  padding: 0.25rem 1rem 0 0;
+}
+
+/* Showcase Section */
+#showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/bursts-bg-mobile.png) no-repeat;
+  background-position: top 5% left 30%;
+  background-color: rgb(41, 65, 171);
+  background-size: 200%;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+}
+
+h1#tagline {
+  color: rgb(30, 215, 96);
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+  padding-bottom: 1rem;
+}
+
+#showcase p {
+  color: rgb(30, 215, 96);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.btn-signup {
+  background-color: rgb(30, 215, 96);
+  color: rgb(41, 65, 171);
+  font-weight: 900;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 75px;
+  margin-top: 30px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background 100ms ease;
+}
+
+.btn-signup:hover {
+  background-color: rgb(48, 228, 111);
+  box-shadow: 100px 0px 200px rgba(0, 0, 0, 0.1),
+    -10px 0px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Links Section */
+#links {
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+#links .logo .img-logo {
+  max-width: 100px;
+  margin-left: -16px;
+  margin-bottom: 24px;
+}
+
+#links .links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.links-cols {
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.links-cols a {
+  font-weight: 400;
+}
+
+.links-cols a:hover {
+  color: rgb(30, 215, 96);
+}
+
+.col-title {
+  color: rgb(146, 146, 146);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.btn-social {
+  background-color: rgb(49, 49, 49);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background 100ms ease;
+}
+
+.btn-social-img {
+  width: 25px;
+  height: 25px;
+  filter: invert();
+}
+
+.btn-social:hover {
+  background-color: rgb(30, 215, 96);
+}
+
+/* Footer */
+#footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  color: rgb(160, 159, 159);
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+#footer a {
+  color: rgb(160, 159, 159);
+}
+
+#footer a:hover {
+  color: rgb(30, 215, 96);
+}
+
+#footer li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+/* Media Queries*/
+@media (min-width: 480px) {
+  #showcase {
+    background: url(../images/bursts-bg-mobile.png) no-repeat;
+    background-position: top 30% left 50%;
+    background-color: rgb(41, 65, 171);
+    background-size: 150%;
+  }
+
+  #showcase p {
+    font-size: 1rem;
+  }
+
+  h1#tagline {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1048px) {
+  #navbar {
+    height: 80px;
+    padding: 1.25rem 0 0 0;
+    margin-bottom: 80px;
+  }
+
+  #navbar .nav-container {
+    width: 90%;
+  }
+
+  .logo .img-logo {
+    max-width: 130px;
+    padding: 0;
+  }
+
+  #nav-links li {
+    display: inline-flex;
+  }
+
+  #nav-links li + li {
+    margin-left: 2rem;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  #showcase {
+    background: url(../images/bursts-bg.svg) no-repeat;
+    background-position: top center;
+    background-color: rgb(41, 65, 171);
+    background-size: 155%;
+  }
+
+  #links {
+    line-height: 2.5rem;
+    padding: 4rem 0;
+  }
+
+  #links .links-container {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  #links .logo .img-logo {
+    max-width: 130px;
+    margin-left: 0px;
+  }
+
+  #footer .footer-container {
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbar .nav-container {
+    width: 60%;
+  }
+
+  #links .links-container {
+    width: 60%;
+  }
+
+  #footer .footer-container {
+    width: 60%;
+  }
+
+  #showcase {
+    margin-top: 2rem;
+  }
+
+  h1#tagline {
+    font-size: 9rem;
+    padding: 0 0 2rem 0;
+  }
+}
+
+@media (min-width: 1376px) {
+  h1#tagline {
+    padding: 0 17rem 2rem 17rem;
+  }
+}
